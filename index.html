@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namoz vaqtlari</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="site-header py-4">
+        <div class="container w-[1300px] m-auto px-[20px]">
+            <div class="site-header__inner flex items-center justify-between">
+                <a class="logo-img text-3xl text-green-700 font-bold" href="./index.html">
+                    Namozvaqti.uz
+                </a>
+                <div class="site-header__right-section flex items-center gap-2">
+                    <ul class="site-header__lang-list flex items-center gap-2">
+                        <li class="lang-list__item p-1.5 bg-sky-600 rounded cursor-pointer">
+                            <a class="lang-list__item-lang text-white">Uz</a>
+                        </li>
+                        <li class="lang-list__item p-1.5 bg-sky-600 rounded cursor-pointer">
+                            <a class="lang-list__item-lang text-white">Уз</a>
+                        </li>
+                        <li class="lang-list__item p-1.5 bg-sky-600 rounded cursor-pointer">
+                            <a class="lang-list__item-lang text-white">Ру</a>
+                        </li>
+                        <li class="lang-list__item p-1.5 bg-sky-600 rounded cursor-pointer">
+                            <a class="lang-list__item-lang text-white">En</a>
+                        </li>
+                    </ul>
+                    <form class="js-search-form">
+                        <input class="js-region-search-input border-2 border-gray-300 p-1.5 rounded outline-none" type="text" aria-label="search for region" placeholder="search...">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main section starts  -->
+
+    <main>
+        <section class="namazvaqti-section">
+            <h1 class="nazmoqvati-section__title text-4xl text-dark font-bold text-center mt-4"><span class="region-span text-sky-600 underline">(Toshkent viloyati)</span> namoz vaqti </h1>
+            <p class="namozvaqti-section__desc text-white text-[20px] font-semibold text-center bg-[#ae8e72] mt-4 py-1.5">19 Iyul 2024 - 12 Muharram 1446</p>
+            <div class="namazvaqti-section__schedules bg-[#856c52] flex gap-2 items-center py-4 m-auto pl-[660px]">
+                <a class="namazvaqti-day bg-white py-2 px-4 text-dark font-semibold rounded cursor-pointer">Bugun</a>
+                <a class="namazvaqti-week bg-white py-2 px-4 text-dark font-semibold rounded cursor-pointer">Haftalik</a>
+                <a class="namazvaqti-month bg-white py-2 px-4 text-dark font-semibold rounded cursor-pointer">Oylik</a>
+            </div>
+            <p class="present-time font-bold text-2xl text-center bg-[#c49f62] py-2">Hozirgi vaqt: 09:25:08</p>
+            <p class="namaz-interval font-bold text-2xl text-center bg-[#fff3cd] py-2">Peshingacha: 03:08:20</p>
+            <ul class="namazvaqti-section__prayer-times flex items-center gap-2 w-[1300px] m-auto px-[20px] py-[60px]">
+             
+            </ul>
+        </section>
+
+        <template class="js-namazvaqti-template">
+            <li class="prayer-times__item text-2xl font-semibold py-4 px-6 border-2 border-black w-[200px] text-center">
+                <span class="bomdod-time text-3xl font-bold">03:26</span> Bomdod
+            </li>
+            <li class="prayer-times__item text-2xl font-semibold py-4 px-6 border-2 border-black w-[200px] text-center">
+                <span class="quyosh-time text-3xl font-bold">05:26</span> Quyosh
+            </li>
+            <li class="prayer-times__item text-2xl font-semibold py-4 px-6 border-2 border-black w-[200px] text-center">
+                <span class="peshin-time text-3xl font-bold">12:26</span> Peshin
+            </li>
+            <li class="prayer-times__item text-2xl font-semibold py-4 px-6 border-2 border-black w-[200px] text-center">
+                <span class="asr-time text-3xl font-bold pr-10 pl-9">17:26</span> Asr
+            </li>
+            <li class="prayer-times__item text-2xl font-semibold py-4 px-6 border-2 border-black w-[200px] text-center">
+                <span class="shom-time text-3xl font-bold pr-10 pl-8">19:26</span> Shom
+            </li>
+            <li class="prayer-times__item text-2xl font-semibold py-4 px-6 border-2 border-black w-[200px] text-center">
+                <span class="xufton-time text-3xl font-bold">21:26</span> Xufton
+            </li>
+        </template>
+    </main>
+
+
+
+
+
+
+
+    <script src="./main.js"></script>
+    
+</body>
+</html>
